@@ -75,6 +75,9 @@ h3 {
   text-align: center;
   text-decoration: none;
   background: #4aaaa5;
+  animation-name: coloring;
+  animation-duration: 7s;
+  animation-delay: 2s;
 }
 
 nav {
@@ -324,3 +327,11 @@ input[type=submit] {
 }
 
 /*@keyframes*/
+
+@keyframes coloring {
+  0% {background: #4aaaa5;}
+  40% {background: #6345a8;}
+  85% {background: #d12d6c;}
+  100% {background: #4aaaa5}
+}
+
