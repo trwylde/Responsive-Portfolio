@@ -215,3 +215,112 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+/*media queries*/
+
+@media (max-width: 980px) {
+
+} 
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    padding-right: 30px;
+    clear: both;
+  }
+  
+  #masthead {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: auto;
+  }
+  
+  .main-section {
+    min-width: calc(100vw - 50px);
+    max-width: 768px;
+    padding: 50px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  #masthead {
+    position: static;
+    z-index: 99;
+    min-width: 640px;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    text-align: center;
+    clear: both;
+  }
+
+  #logo {
+    min-width: 640px;
+    height: 80px;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    clear: both;
+  }
+  #main-container {
+    padding-top: 40px;
+  }
+  
+  .main-section {
+    max-width: 680px;
+    padding: auto;
+    margin: auto;
+  }
+
+  nav {
+    float: none;
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  nav a {
+    display: inline;
+    float: none;
+    min-width: 100%;
+    padding-right: 0;
+  }
+
+  /*index*/
+
+  #auth-image {
+    position: relative;
+    float: none;
+    width: 400px;
+    margin-left: auto;
+    overflow: auto;
+  }
+  .auth-image {
+    width: 75%;
+    height: auto;
+    border: 0 none;
+  }
+
+
+  /*portfolio page*/
+  
+  .work {
+    position: relative;
+    float: none;
+    width: 400px;
+    margin: auto;
+    overflow: auto;
+  }
+  .work img {
+    width: 100%;
+    height: auto;
+    border: 0 none;
+    opacity: 0.8;
+  }
+}
+
+/*@keyframes*/
